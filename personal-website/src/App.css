@@ -5,38 +5,86 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Add margin to push content down below the fixed header */
+.main-content {
+  margin-top: 120px; /* Adjust based on the header height */
 }
 
 .card {
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
+/* Header styling */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  padding: 20px;
+  border-bottom: 1px solid #dee2e6;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between; /* Space between title and dropdown */
+  align-items: center;
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+.header-title {
+  font-size: 3rem;
+  font-weight: bold;
+  flex-grow: 1; /* Title centered with space around it */
+  margin: 0 auto; /* Center title if necessary */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background: none; /* Remove default button background */
+  border: none; /* Remove button border */
+  padding: 10px;
+  font-size: 1.5rem; /* Adjust size of the icon */
+  cursor: pointer;
+  color: #f3b88c; /* Icon color */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0; /* Align dropdown to the far right */
+  top: 100%; /* Place below the dropdown button */
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Keep dropdown open while hovering over dropdown content */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Optional: Improve transition for smoother appearance */
+.dropdown-content {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
 }
