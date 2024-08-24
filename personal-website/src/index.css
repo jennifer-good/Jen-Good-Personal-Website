@@ -7,15 +7,15 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --color-background: #f4f1e9; /* Light beige */
-  --color-primary: #d46a6a; /* Deep red */
-  --color-secondary: #f3b88c; /* Warm orange */
+  --color-background: #605f4b; /* Light beige */
+  --color-primary: #f4a258; /* Deep red */
+  --color-secondary: #bdd3ce; /* Warm orange */
   --color-accent: #8c4d32; /* Rich brown */
   --color-text: #3b3b3b; /* Dark gray for text */
-  --color-link: #d46a6a; /* Match primary color */
+  --color-link: #c47457; /* Match primary color */
   --color-link-hover: #8c4d32; /* Change on hover */
-  --color-header-background: #3b3b3b; /* Dark gray for header */
-  --color-header-text: #f4f1e9; /* Light beige for header text */
+  --color-header-background: #ffedd2; /* Dark gray for header */
+  --color-header-text: #708c69; /* Light beige for header text */
   --color-footer-background: #8c4d32; /* Rich brown for footer */
 }
 
